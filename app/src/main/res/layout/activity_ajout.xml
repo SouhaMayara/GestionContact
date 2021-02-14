@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arrierePlan"
+    android:orientation="vertical"
+    tools:context=".Ajout">
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/st_titre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajout"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ednom_ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="saisir nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edprenom_ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="saisir prenom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ednum_ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="saisir numero"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnval_ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="Valider" />
+
+        <Button
+            android:id="@+id/btnqte_ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="Quitter" />
+    </LinearLayout>
+
+</LinearLayout>
